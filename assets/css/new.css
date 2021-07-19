@@ -1,0 +1,379 @@
+ #span1{
+  font-family: avenir-lt-w01_85-heavy1475544,sans-serif;
+  font-weight: 500;
+  color: #4287c886;
+  font-size: 16px;
+  text-align: justify;
+}
+/* .testing{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+#font2{
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #4288c8;
+  font-size: 43px;
+}
+ /* #image_cyber{
+  width: 10%;
+  height: 10%;
+} */
+ /* #image_cyber img{
+  width:800px;
+  height: 300px;
+} */
+/* #image2_cyber img{
+  width: 300px;
+  height: 300px;
+} */
+/* #block2{
+  display: flex;
+} */
+/* #heading2{
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #4288c8;
+  font-size: 43px;
+} */
+/* #manage{
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #4288c8;
+  font-weight: 600;
+  font-size: 20px;
+} */
+
+/* model3 box card model */
+
+/* .profile-area{
+  padding: 80px 0;
+} */
+.card{
+  box-shadow:0 0 30px rgba(0,0,0,0.5);
+  overflow: hidden;
+  border-radius: 15px;
+}
+/* .img1 img{
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+} */
+/* .main-text{
+  padding: 30px 0;
+} */
+/* main-text h2{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px;
+} */
+/* .main-text p {
+  font-size: 16px;
+  padding: 0 35px;
+} */
+
+/* model 4 */
+/* .cards-block{
+  display: flex;
+} */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #f7fbfe
+}
+
+.container {
+  padding: 2px 16px;
+}
+.container h4{
+  margin-top: 30px;
+  margin-left: 1.5rem;
+} 
+
+
+/* model 5 */
+.cards-container{
+  margin-top: 30px;
+  display: flex;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* max-width: 300px; */
+  margin: auto;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card p, h4{
+  margin-left:1.5rem;
+}
+.card h4{
+  text-align: left;
+}
+.card p{
+  text-align: initial;
+  margin-right: 20px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+.socialize{
+  display: flex;
+  justify-content: center;
+}
+.socialize a{
+  margin-left:3rem;
+  margin-right: 3rem; 
+  margin-bottom: 20px;
+}
+
+#btn {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+#btn:hover {
+  color:rgb(66, 136, 200);
+} 
+
+
+/* Interns graduated text */
+
+#image2_cyber img{
+  width: 250px;
+  height: 230px;
+}
+#image2_cyber{
+  position: relative;
+    top: 0px;
+    left: -15rem;
+    margin-bottom: -90px;
+    margin-top: 44px;
+}
+#internsNumber{
+  width: 201px;
+  margin-top: 0px;
+}
+#numbercount{
+  position: relative;
+  top: -60px;
+  left: 56px;
+  color: rgb(66, 136, 200);
+  font-size: 55px;
+  font-weight: initial;
+  font-family: "Century Gothic", Lato;
+}
+.takeawayimg{
+  width: 50%;
+  position: relative;
+  top: -14rem;
+  left: 42rem;
+  margin-bottom: -13rem;
+}
+.takeawayimg img{
+  width: 425px;
+  height: auto;
+}
+/* Donut for percentages */
+/* .donut h2{
+  position: relative;
+  top: 85px
+} */
+/* #img{
+  position: relative;
+  left: 10rem;
+  top: -2rem;
+  width: 66% !important;
+  height: 400px;
+  margin-top: 150px;
+  /* width: 1000px;
+  height: 300px;
+  margin-top: 150px; 
+} */
+/* #donutdesc{
+  margin-top: -21rem;
+} */
+/* .ulList{
+  margin-bottom: -215px;
+  position: relative;
+    display: block;
+    top: -25rem;
+    left: -29rem;
+} */
+ /* .ulList ul{
+  font-size: 20px;
+  color: rgb(66, 136, 200)
+} */
+/*
+#ul1{
+  top: 0rem;
+  left: 13rem;
+  position: relative;
+}
+#ul2{
+  position: relative;
+  top: -12rem;
+  left: -21rem;
+}
+#ul3{
+  position: relative;
+  top: -21rem;
+  left: -20rem;
+}
+#ul4{
+  position: relative;
+  top: -24rem;
+  left: -13rem;
+}
+#ul5{
+  position: relative;
+    top: -24rem;
+    left: -5rem;
+}
+#ul6{
+  position: relative;
+  top: -22rem;
+  left: 0rem;
+}
+#ul7{
+  position: relative;
+  top: -16rem;
+  left: 2rem;
+}
+#ul8{
+  position: relative;
+    top: -1rem;
+    left: -8rem;
+} */
+
+/* .iframe iframe{
+  scroll-behavior: hidden;
+} */
+
+/*mobile-view for intern  */
+
+
+/* .iframe a{
+  position: relative;
+  top: -1rem;
+  left: 25rem;
+}
+@media screen and (max-width: 500px) {
+	#numbercount {
+    position: relative;
+    top: -38rem;
+    left: 102px;
+	}
+  #image2_cyber img{
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+  }
+} */
+
+/* Careers */
+
+
+
+
+
+
+
+
+
+
+
+
+/* caraousel testing */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+} */
+.jai{
+  display: grid;
+  height: 100%;
+  position:absolute;
+  top: 30%;
+  left: 15%;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+}
+.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+

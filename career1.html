@@ -1,1144 +1,457 @@
-<html>
-    <head>
-        <title>testing</title>
-        <link href="assets/css/new.css" rel="stylesheet" />
-        <link href="assets/css/style.css" rel="stylesheet" />
-    </head>
-    <body>
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <link href="assets/css/style.css" rel="stylesheet" />
+  
+
+  <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicons -->
+
+    <link href="assets/img/logo-small.png" rel="icon" />
+
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+    <!-- Google Fonts -->
+  
+    <link
+  
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+  
+      rel="stylesheet" />
+  
+  
+  
+    <!-- Vendor CSS Files -->
+  
+    <link rel="preload" href="assets/img/bg-hero.jpg" as="image" type="image/jpg" />
+  
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+  
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+  
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  
+  
+  
+    <!-- Template Main CSS File -->
+  
+    <link href="assets/css/style.css" rel="stylesheet" />
+  
+    <link href="assets/css/flickity.css" rel="stylesheet" />
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.js">
+  
+    
+  
+    <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet" />
+  
+  
+   
+<style>
+  .card-container {
+    justify-content: center;
+    /* grid-template-columns: 65rem; */
+    grid-template-columns: 45rem 45rem;
+  display: grid;
+  width: 100%;
+  /* grid-template-columns: auto auto auto auto; */
+  /* grid-gap: 10px; */
+  background-color: #fff;
+  /* padding: 10px; */
+}
+
+.cards-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid black; */
+  width: 50%;
+  height: auto;
+  text-align: center;
+  /* font-size: 30px; */
+}
+.card label{
+    color: #4288c8ff;
+    text-align: left;
+    margin-left: 1.5rem;
+    font-size: 20px;
+}
+.careerdiv1{
+    margin-top: 1rem;
+    display: flex;
+    width: 90%;
+    height: 4rem;
+}
+.careerdiv1 div{
+    display: inline-table;
+    grid-template-columns: 5rem 5rem 5rem 5rem;
+}
+#modals{
+  background: #4288c8 !important;
+  color: #fff !important;
+}
+#careerapply{
+  background: #4288c8 !important;
+  color: #fff !important;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  top: 24px;
+  width: 8rem;
+  left: 29rem;
+}
+.modal-content{
+  width: 73rem !important;
+  margin-left: -22rem !important;
+}
+/* Read more starts */
+  #box{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    border-radius: .25rem;
+  }
+  #box label{
+    color: #4288c8ff;
+    text-align: left;
+    margin-left: 1.5rem;
+    font-size: 20px;
+  }
+  #box p{
+    height: 90px;
+    overflow: hidden;
+  }
+  #box a{
+    display: inline-block;
+    margin:0rem 1rem 1rem 1.5rem;
+  }
+  #box.showContent p{
+    height: auto;
+  }
+  #para{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .takeaways{
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem 15rem;
+}
+  .takeaways span>p{
+    background-color: rgb(194 214 243 / 52%);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  #icons a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    position: relative;
+    left: -4rem;
+    top: 1rem;
+  }
+  #btn .fa{
+    color: black;
+  }
+#btn .fa:hover{
+  color: #4288c8;
+}
+.howtoApply li span{
+  font-size: 18px;
+    font-weight: 400;
+}
+#readmore{
+  position: relative;
+    top: 0rem;
+    left: 1rem;
+    margin-bottom: 1rem;
+}
+#carouselExampleIndicators{
+  position: relative;
+    top: 3rem;
+    left: 22rem;
+}
+#btn1{
+  background-color:red;
+}
+.carousel-control-prev-icon{
+  background-color: #4288c8;
+}
+.carousel-control-prev{
+  background-color: #4288c8;
+}
+.carousel-control-next-icon{
+  background-color: #4288c8;
+}
+.carousel-control-next{
+  background-color: #4288c8;
+}
+/* Read more ends */
 
 
-        <!DOCTYPE html>
+/* .careerdescid {
+ height: 5rem ;
+ overflow: hidden !important;
+} */
+</style>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
 
-        <html lang="en">
-        
-        
-        
-        <head>
-        
-          <meta charset="utf-8" />
-        
-          <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        
-        
-        
-          <title>Global Careers @VTF</title>
-        
-          <meta content="" name="description" />
-        
-          <meta content="" name="keywords" />
-        
-        
-        
-          <!-- Favicons -->
-        
-          <link href="assets/img/logo-small.png" rel="icon" />
-        
-          <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-        
-        
-        
-          <!-- Google Fonts -->
-        
-          <link
-        
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        
-            rel="stylesheet" />
-        
-        
-        
-          <!-- Vendor CSS Files -->
-        
-          <link rel="preload" href="assets/img/bg-hero.jpg" as="image" type="image/jpg" />
-        
-          <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        
-          <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-        
-          <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-        
-          <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-        
-          <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
-        
-          <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
-        
-          <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-        
-        
-        
-          <!-- Template Main CSS File -->
-        
-          <link href="assets/css/style.css" rel="stylesheet" />
-        
-          <link href="assets/css/flickity.css" rel="stylesheet" />
-        
-          <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.js">
-        
-          <style>
-            #card-heading{
-              color: #4288c8;
-            }
-        
-            .header{
-        
-              width:100%;
-        
-              height:60px;
-        
-              background-color:#E6E6FA;
-        
-              padding: 10px 16px;
-        
-            }
-        
-            .content {
-        
-              padding: 16px;
-        
-            }
-        
-            .bun{
-        
-                
-        
-                color:#fff;
-        
-                border: none;
-        
-                outline: none;
-        
-                font-size: 17px;
-        
-                padding: 5px 8px;
-        
-                border-radius: 5px;
-        
-                cursor: pointer;
-        
-                transition: 0.2s;
-        
-            }
-        
-            .sticky {
-        
-          position: fixed;
-        
-          top: 0;
-        
-          width: 100%
-        
-            }
-        
-            .sticky + .content {
-        
-          padding-top: 102px;
-        
-            }
-        
-            body{
-        
-              margin:0px;
-        
-              padding:0px;
-        
-            }
-        
-            .logo{
-        
-              
-        
-              font-size:25px;
-        
-              font-family:verdana;
-        
-              text-align:left;
-        
-              margin-top:0px;
-        
-              float:left;
-        
-              margin:0px;
-        
-              line-height:50px;
-        
-              padding-left:9px;
-        
-            }
-        
-            .slider{
-        
-                max-width: 1150px;
-        
-                overflow: hidden;
-        
-                display: flex;
-        
-              }
-        
-            .slider .p-3{
-        
-              flex: 1;
-        
-              margin: 0 10px;
-        
-            }
-        
-            .slider .card-body{
-        
-              height: 100%;
-        
-              width: 100%;
-        
-              object-fit: cover;
-        
-              height: 45vh;
-        
-            }
-        
-            .neumorphic-card .card-body .description small{
-        
-              text-align: justify;
-        
-              margin: 10px 0;
-        
-              align-items: stretch;
-        
-            }
-        
-            .neumorphic-card .card-body .btn{
-        
-                display: block;
-        
-                text-align: left;
-        
-                margin: 10px 0;
-        
-            }
-        
-            .neumorphic-card .card-body .btn button{
-        
-                background: #4288c8;
-        
-                color:#fff;
-        
-                border: none;
-        
-                outline: none;
-        
-                font-size: 17px;
-        
-                padding: 5px 8px;
-        
-                border-radius: 5px;
-        
-                cursor: pointer;
-        
-                transition: 0.2s;
-        
-            }
-        
-            .neumorphic-card .card-body .btn button:hover{
-        
-              transform: scale(0.9);
-        
-            }
-        
-          </style>
-        
-          <style media = "screen">
-        
-            .carousel-cell{
-        
-              width:100%;
-        
-              margin-right: 10px;
-        
-            }
-        
-            .carousel-cell::before{
-        
-              display:block;
-        
-            }
-                    .cards-container {
-                        justify-content: center;
-                        /* grid-template-columns: 65rem; */
-                        grid-template-columns: 45rem 45rem;
-                      display: grid;
-                      width: 100%;
-                      /* grid-template-columns: auto auto auto auto; */
-                      /* grid-gap: 10px; */
-                      background-color: #fff;
-                      /* padding: 10px; */
-                    }
-                    
-                    .cards-container > div {
-                      background-color: rgba(255, 255, 255, 0.8);
-                      /* border: 1px solid black; */
-                      width: 50%;
-                      height: auto;
-                      text-align: center;
-                      /* font-size: 30px; */
-                    }
-                    .card label{
-                        color: #4288c8ff;
-                        text-align: left;
-                        margin-left: 1.5rem;
-                        font-size: 20px;
-                    }
-                    .careerdiv1{
-                        margin-top: 1rem;
-                        display: flex;
-                        width: 90%;
-                    }
-                    .careerdiv1 div{
-                        display: inline-table;
-                        grid-template-columns: 5rem 5rem 5rem 5rem;
-                    }
-                    #careerapply{
-                      background: #4288c8;
-                      color: #fff;
-                      border: none;
-                      outline: none;
-                      font-size: 17px;
-                      padding: 5px 8px;
-                      border-radius: 5px;
-                      cursor: pointer;
-                      transition: 0.2s;
-                      position: relative;
-                      top: 0rem;
-                      width: 8rem;
-                      left: 29rem;
-                    }
-                      
-                    
-           
-        
-          </style>
-        
-          <script>
-        
-          function myFunction() {
-        
-            var input, filter, cards, cardContainer, h5, keep_card, card_titles, badge_texts, i, j;
-        
-        
-        
-        input = document.getElementById("myFilter");
-        
-        filter = input.value.toUpperCase();
-        
-        cardContainer = document.getElementById("myItems");
-        
-        cards = cardContainer.getElementsByClassName("neumorphic-card");
-        
-        for (i = 0; i < cards.length; i++) {
-        
-            //We will switch keep_card to true if we find search text in badge or title
-        
-            keep_card = false;
-        
-            //querySelectorAll returns all elements of a.badge. querySelector returns only the first element
-        
-            card_titles = cards[i].querySelectorAll(".card-body h5.card-title");
-        
-            badge_texts = cards[i].querySelectorAll(".card-footer a.badge");
-        
-        
-        
-            //You must loop through all card titles.
-        
-            for(j = 0; j < card_titles.length; j++) {
-        
-                if (card_titles[j].innerText.toUpperCase().indexOf(filter) > -1) {
-        
-                    //Found search text, now lets switch keep_card on
-        
-                    keep_card = true;
-        
-                    //No need for further looping, we found the card, there we break loop
-        
-                    break;
-        
-                }
-        
-            }
-        
-        
-        
-            if(!keep_card) {
-        
-                for(j = 0; j < badge_texts.length; j++) {
-        
-                    if (badge_texts[j].innerText.toUpperCase().indexOf(filter) > -1) {
-        
-                        keep_card = true;
-        
-                        break;
-        
-                    }
-        
-                }
-        
-            }
-        
-        
-        
-            if(keep_card) {
-        
-                cards[i].style.display = "";
-        
-            } else {
-        
-                cards[i].style.display = "none";
-        
-            }
-        
-        
-        
-        }
-        
-        }
-        
-        window.onscroll = function() {myFunction1()};
-        
-        
-        
-        // Get the header
-        
-        var header = document.getElementById("myHeader");
-        
-        
-        
-        // Get the offset position of the navbar
-        
-        var sticky = header.offsetTop;
-        
-        
-        
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        
-        function myFunction1() {
-        
-          if (window.pageYOffset > sticky) {
-        
-            header.classList.add("sticky");
-        
-          } else {
-        
-            header.classList.remove("sticky");
-        
-          }
-        
-        }
-        
-        
-        
-          </script>
-        
-          <script data-require="angular.js@1.2.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" data-semver="1.2.16"></script>
-        
-            <script type="text/javascript" src="http://code.angularjs.org/1.2.1/angular-animate.js"></script>
-        
-            <script>
-        
-              
-        
-              var app = angular.module('vtf', ["ngAnimate"]);
-        
-        
-        
-        app.controller('MainCtrl', function($scope) {
-        
-          $scope.name = 'slideout steeze';
-        
-        });
-        
-        
-        
-        
-        
-            </script>
-        
-        </head>
-        
-        
-        
-        <body>
-        
-          <div id="page-preloader">
-        
-            <div class="wrapper">
-        
-              <img src="assets/img/logo-small.png">
-        
-            </div>
-        
+    
+   <!-- Button trigger modal -->
+   <!-- <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p> -->
+   
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Inside Sales Representative</h2>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="width: 68rem; height: auto;">
+        <div>
+          <div>
+            <span style="display: flex;"><h5>Remote  :  </h5>No</span>
+            <span style="display: flex;"><h5>Location  :  </h5>Hyderabad</span>
+            <span style="display: flex;"><h5>Category  :  </h5>General</span>
+            <span style="display: flex;"><h5>Req ID  :  </h5>198543286</span>
           </div>
+          <div style="position: relative; top: -6rem;left: 50rem; margin-bottom: -5rem;">
+            <button style="background: #4288c8 !important;
+            color: #fff !important;
+            border: none;
+            outline: none;
+            font-size: 19px;
+            padding: 5px 8px;
+            border-radius: 5px;
+            width:12rem;">Apply</button>
+            <ul id="icons">
+              <a id="btn" href="#"><i class="fa fa-dribbble"></i></a>
+              <a id="btn" href="#"><i class="fa fa-twitter"></i></a>
+              <a id="btn" href="#"><i class="fa fa-linkedin"></i></a>
+              <a id="btn" href="#"><i class="fa fa-facebook"></i></a>
+            </ul>
+          </div>
+          <hr style="width: 68rem;">
+          <div>
+            <h2>Job Description</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia maiores veritatis aut dolores, 
+              explicabo officiis totam quis et ratione aperiam nesciunt eveniet optio aliquam sunt corrupti ipsum sed quam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque magni autem harum suscipit, labore voluptas non ad porro.
+             Repellat molestias tempora et incidunt adipisci temporibus voluptatem illo fugit aspernatur consequatur?</p>
+             <ul>
+               <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores omnis quo eaque eius atque tempore vero ut hic,</li> 
+                <li> aliquam ullam dolore facilis, rerum esse rem voluptates enim delectus repellat tempora.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad assumenda excepturi doloremque quo? Eaque nobis, molestiae ex fugit excepturi est unde dignissimos maiores numquam obcaecati velit commodi praesentium impedit?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sit fugit tempore saepe enim nam? Sapiente quia itaque alias quis saepe deserunt, perferendis sint, neque reprehenderit dolor, recusandae harum ipsum?</li>
+             </ul>
+             <h3 style="color: #4288c8ff">Roles & Responsibilities</h3>
+            <ul>
+              <li>et ratione aperiam nesciuntLorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, explicabo.</li>
+              <li>Lorem ipsum consectetur adipisicing elit dolor sit amet consectetur adipisicing elit. Repudiandae, explicabo.</li>
+              <li>Lorem ipsum dolor sit amet consectetu. Repudiandae, explicabo.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, explicabo.</li>
+              <li>Lorem ipsum dolor sit onsecteturamet consectetur adipisicing elit. Repudiandae, explicabo.</li>
+            </ul>
+            <h3 style="color: #4288c8ff">Pre-requisites</h3>
+            <ul>
+              <li>et ratione aperiam nesciuntLorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, explicabo.</li>
+              <li>Lorem ipsum consectetur adipisicing elit dolor sit amet consectetur adipisicing elit. Repudiandae, explicabo.</li>
+              <li>Lorem ipsum dolor sit amet consectetu. Repudiandae, explicabo.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, explicabo.</li>
+              <li>Lorem ipsum dolor sit onsecteturamet consectetur adipisicing elit. Repudiandae, explicabo.</li>
+            </ul>
+              <h3 style="color: #4288c8ff">Take Away`s</h3>
+                <div class="takeaways">
+                <span><p>Certificate of Completion</p></span>
+                <span><p>Letter of recommendation</p></span>
+                <span><p>Flexible work hours</p></span>
+                <span><p>Lorem ipsum dolor</p></span>
+                <span><p> Repudiandae, explicabo.</p></span>
+                <span><p>Certificate of Completion</p></span>
+                <span><p>Letter of recommendation</p></span>
+                <span><p>Flexible work hours</p></span>
+                <span><p>Lorem ipsum dolor</p></span>
+                <span><p> Repudiandae, explicabo.</p></span>
+              </div>
+              <hr style="width: 68rem;">
+              <h3 style="color: #4288c8ff">How to Apply?</h3>
+              <ul class="howtoApply">
+                <li><span>Step-1 :</span>click on consectetur adipisicing elit. Repudiandae, explicabo</li>
+                <li><span>Step-2 :</span>Asperiores omnis quo eaque eius atque tempor</li>
+                <li><span>Step-3 :</span>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain </li>
+                <li><span>Step-4 :</span>On the other hand, we denounce with righteous indignation and dislike men who are</li>
+                <li><span>Step-5 :</span> Visit  <a href="https://virtuallytesting.com/" target="_blank">https://virtuallytesting.com</a></li>
+              </ul>
+                  
+          </div>
+        </div>
         
-          <!-- ======= Header ======= -->
-        
-          <div id="header" class="fixed-top d-flex align-items-center" style="margin-left:10px; margin-right:10px;">
-        
-            
-        
-            
-        
-            <h1 class="logo"><a href="https://virtuallytesting.com/"><img src="assets/img/logo-small.png" class="img-fluid animated" alt="" /></a></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-            <h2 style="font-size: 30px;">Virtually Testing Foundation</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-                    <form style="line-height:32px;float:right;">
-        
-                        <input style="right: 10px;" type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for jobs..">
-        
-                    </form>
-        
-            
-        
-          </div><br><br><br><br><br><br><br>
-        
-          <!-- End Header -->
-        
-        
-        
-          <!-- ======= Hero Section ======= -->
-            <section class = "team pt-3">
-        
-              <!-- <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">  -->
-                <div class="cards-container">
-                    
-                    
-                    <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 13rem;">
-                        <h4>Description</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est.</p>                           
-                        <h4>Minimum-criteria</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est.</p>
-                                                   
-                    </div> -->
-                    <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
-                      <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-                       <div class="careerdiv1">
-                          <div>
-                            <label id>Inside Sales Representative</label>
-                            <p>Req ID: R2112575</p> 
-                          </div>
-                          <div>
-                              <label>Location</label>
-                            <p>singapore SG</p>
-                          </div>                        
-                            
-                          <div>
-                              <label>Categories</label>
-                            <p>Inside Sales</p>
-                          </div>
-                          
-                            
-                        </div>
-                        
-                        <button id="careerapply">
-                            Apply
-                        </button>
-                        <label style="margin-top: -26px;">Job Description</label>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-                        
-                        
-                                                   
-                    </div>
-                    <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-                    <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
-                      <div class="careerdiv1">
-                         <div>
-                           <label id>Inside Sales Representative</label>
-                           <p>Req ID: R2112575</p> 
-                         </div>
-                         <div>
-                             <label>Location</label>
-                           <p>singapore SG</p>
-                         </div>                        
-                           
-                         <div>
-                             <label>Categories</label>
-                           <p>Inside Sales</p>
-                         </div>
-                           
-                       </div>
-                       
-                       <button id="careerapply">
-                           Apply
-                       </button>
-                       <label style="margin-top: -26px;">Job Description</label>
-                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-                       
-                       
-                                                  
-                   </div>
-                   <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-                   <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
-                    <div class="careerdiv1">
-                       <div>
-                         <label id>Inside Sales Representative</label>
-                         <p>Req ID: R2112575</p> 
-                       </div>
-                       <div>
-                           <label>Location</label>
-                         <p>singapore SG</p>
-                       </div>                        
-                         
-                       <div>
-                           <label>Categories</label>
-                         <p>Inside Sales</p>
-                       </div>
-                       
-                         
-                     </div>
-                     
-                     <button id="careerapply">
-                         Apply
-                     </button>
-                     <label style="margin-top: -26px;">Job Description</label>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-                     
-                     
-                                                
-                 </div>
-                 <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-                 <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
-                  <div class="careerdiv1">
-                     <div>
-                       <label id>Inside Sales Representative</label>
-                       <p>Req ID: R2112575</p> 
-                     </div>
-                     <div>
-                         <label>Location</label>
-                       <p>singapore SG</p>
-                     </div>                        
-                       
-                     <div>
-                         <label>Categories</label>
-                       <p>Inside Sales</p>
-                     </div>
-                     
-                       
-                   </div>
-                   
-                   <button id="careerapply">
-                       Apply
-                   </button>
-                   <label style="margin-top: -26px;">Job Description</label>
-                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-                   
-                   
-                                              
-               </div>
-               <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-               <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
-                <div class="careerdiv1">
-                   <div>
-                     <label id>Inside Sales Representative</label>
-                     <p>Req ID: R2112575</p> 
-                   </div>
-                   <div>
-                       <label>Location</label>
-                     <p>singapore SG</p>
-                   </div>                        
-                     
-                   <div>
-                       <label>Categories</label>
-                     <p>Inside Sales</p>
-                   </div>
-                   
-                     
-                 </div>
-                 
-                 <button id="careerapply">
-                     Apply
-                 </button>
-                 <label style="margin-top: -26px;">Job Description</label>
-                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-                 
-                 
-                                            
-             </div>
-             <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-             <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
-              <div class="careerdiv1">
-                 <div>
-                   <label id>Inside Sales Representative</label>
-                   <p>Req ID: R2112575</p> 
-                 </div>
-                 <div>
-                     <label>Location</label>
-                   <p>singapore SG</p>
-                 </div>                        
-                   
-                 <div>
-                     <label>Categories</label>
-                   <p>Inside Sales</p>
-                 </div>
-                 
-                   
-               </div>
-               
-               <button id="careerapply">
-                   Apply
-               </button>
-               <label style="margin-top: -26px;">Job Description</label>
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-               
-               
-                                          
-           </div>
-           <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-           <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
-            <div class="careerdiv1">
-               <div>
-                 <label id>Inside Sales Representative</label>
-                 <p>Req ID: R2112575</p> 
-               </div>
-               <div>
-                   <label>Location</label>
-                 <p>singapore SG</p>
-               </div>                        
-                 
-               <div>
-                   <label>Categories</label>
-                 <p>Inside Sales</p>
-               </div>
-               
-                 
-             </div>
-             
-             <button id="careerapply">
-                 Apply
-             </button>
-             <label style="margin-top: -26px;">Job Description</label>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-             
-             
-                                        
-         </div>
-         <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-         <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Readmore starts -->
+<div class="section-title" data-aos="fade-up">
+  <h2>Testimonials</h2>
+  <p>Read what people say about Virtually Testing Foundation</p>
+</div>
+<div class="card-container">
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button id="btn1" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button id="btn1" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button id="btn1" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card" id="box" style="width: 40rem;">
           <div class="careerdiv1">
-             <div>
-               <label id>Inside Sales Representative</label>
-               <p>Req ID: R2112575</p> 
-             </div>
-             <div>
-                 <label>Location</label>
-               <p>singapore SG</p>
-             </div>                        
-               
-             <div>
-                 <label>Categories</label>
-               <p>Inside Sales</p>
-             </div>
-             
-               
-           </div>
-           
-           <button id="careerapply">
-               Apply
-           </button>
-           <label style="margin-top: -26px;">Job Description</label>
-           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-           
-           
-                                      
-       </div>
-       <!-- <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 50rem; height: 15rem;"> -->
-      <div class="card" style="box-shadow: 0 0 30px rgb(0 0 0 / 20%); width: 40rem; height: 17rem;">
-        <div class="careerdiv1">
-           <div>
-             <label id>Inside Sales Representative</label>
-             <p>Req ID: R2112575</p> 
-           </div>
-           <div>
-               <label>Location</label>
-             <p>singapore SG</p>
-           </div>                        
-             
-           <div>
-               <label>Categories</label>
-             <p>Inside Sales</p>
-           </div>
-           
-             
-         </div>
-         
-         <button id="careerapply">
+            <div>
+              <label id>Inside Sales Representative</label>
+              <p>Req ID: R2112575</p> 
+            </div>
+            <div>
+                <label>Location</label>
+              <p>singapore SG</p>
+            </div>                        
+              
+            <div>
+                <label>Categories</label>
+              <p>Inside Sales</p>
+            </div>
+              
+          </div>
+          
+          <button id="careerapply">
              Apply
-         </button>
-         <label style="margin-top: -26px;">Job Description</label>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat eaque, consequuntur odio expedita ab perspiciatis incidunt qui illo vel modi nostrum molestias, corporis a amet iure sunt! Atque, beatae.</p>
-         
-         
-                                    
-     </div>
+          </button>
+          <label >Job Description</label>
+          <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, non illum sapiente eum nihil similique aut itaque impedit. Expedita, voluptatem doloribus quo odio id sapiente officiis iste laboriosam veniam perferendis!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus culpa, unde veritatis veniam labore, illo sit assumenda, placeat neque ab quaerat quibusdam asperiores reprehenderit sequi ut dicta cumque tempore et.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, hic, soluta, vitae excepturi dignissimos quibusdam quis voluptatibus iste odit magnam repudiandae architecto fuga sequi obcaecati odio quia ab quod repellat.
+          </p>
+          <span id="readmore">
+            <button id="modals" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Read More
+            </button>
+          </span>
+          
+        </div>
+      </div>  
+      <div class="carousel-item">
+        <div class="card" id="box" style="width: 40rem; outline: none;">
+          <div class="careerdiv1">
+            <div>
+              <label id>Inside Sales Representative   225</label>
+              <p>Req ID: R2112575</p> 
+            </div>
+            <div>
+                <label>Location</label>
+              <p>singapore SG</p>
+            </div>                        
+              
+            <div>
+                <label>Categories</label>
+              <p>Inside Sales</p>
+            </div>
+              
+          </div>
+          
+          <button id="careerapply">
+             Apply
+          </button>
+          <label >Job Description</label>
+          <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, non illum sapiente eum nihil similique aut itaque impedit. Expedita, voluptatem doloribus quo odio id sapiente officiis iste laboriosam veniam perferendis!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus culpa, unde veritatis veniam labore, illo sit assumenda, placeat neque ab quaerat quibusdam asperiores reprehenderit sequi ut dicta cumque tempore et.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, hic, soluta, vitae excepturi dignissimos quibusdam quis voluptatibus iste odit magnam repudiandae architecto fuga sequi obcaecati odio quia ab quod repellat.
+          </p>
+          <span id="readmore">
+            <button id="modals" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Read More
+            </button>
+          </span>
+          
+        </div>
+      </div>
+      
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    
+ 
+        
+  
+
+</div>
 
 
-        
-                </div>
-        
-            
-        
-          <!-- </div> -->
-        
-            </section><br/>
-        
-            <h2 align="center">Interested in us, apply now!</h2>
-        
-            
-        
-        <section align="center">
-        
-            <div class="bun" style="border-radius:5px;">
-        
-            <button style="background-color:#4288c8;border-radius:5px; border:none; padding: 5px 8px;transition:0.2s;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeLYRdDEk2kMBZRKkDWHUqzPXVfOgZtH752IBkTikJjmAqCgA/viewform" target="_blank" style="color:#ffffff;">Apply Now</a></button>
-        
-            </div>
-        
-        </section>
-        
-            <!-- ======= More Services Section ======= -->
-        
-        
-        
-        
-            <!-- ======= Contact Section ======= -->
-        
-            <section id="contact" class="contact">
-        
-              <div class="container">
-        
-                <div class="section-title" data-aos="fade-up">
-        
-                  <h2>Contact Us</h2>
-        
-                </div>
-        
-        
-        
-                <div class="row">
-        
-                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        
-                    <div class="contact-about text-center">
-        
-                      <p>Virtually Testing Foundation</p>
-        
-                      <img src="assets/img/qr.png" class="w-100 mx-auto mb-4" style="max-width: 200px" />
-        
-                      <div class="social-links">
-        
-                        <a href="https://twitter.com/VTFoundation" class="twitter"><i class="icofont-twitter"></i></a>
-        
-                        <!-- <a href="#" class="facebook"><i class="icofont-facebook"></i></a> -->
-        
-                        <a href="https://www.youtube.com/channel/UC1cTRjKgqTWfBjB1AdrWcbw" class="youtube"><i
-        
-                            class="icofont-youtube"></i></a>
-        
-                        <a href="https://www.linkedin.com/company/virtually-testing" class="linkedin"><i
-        
-                            class="icofont-linkedin"></i></a>
-        
-                      </div>
-        
-                    </div>
-        
-                  </div>
-        
-        
-        
-               
-        
-        
-        
-                      <div>
-        
-                        <i class="ri-mail-send-line"></i>
-        
-                        <p>jobs@virtuallytesting.com</p>
-        
-                      </div>
-        
-        
-        
-                      <!--  <div>
-        
-                        <i class="ri-phone-line"></i>
-        
-                        <p>+1 415 545 8884</p>
-        
-                      </div>
-        
-                    </div>
-        
-                  </div>-->
-        
-        
-        
-                  <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-        
-                    <form role="form" id="form" class="php-email-form">
-        
-                      <div class="form-group">
-        
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-        
-                          data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-        
-                        <div class="validate"></div>
-        
-                      </div>
-        
-                      <div class="form-group">
-        
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-        
-                          data-rule="email" data-msg="Please enter a valid email" />
-        
-                        <div class="validate"></div>
-        
-                      </div>
-        
-                      <div class="form-group">
-        
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-        
-                          data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-        
-                        <div class="validate"></div>
-        
-                      </div>
-        
-                      <div class="form-group">
-        
-                        <textarea class="form-control" name="message" rows="5" id="message" data-rule="required"
-        
-                          data-msg="Please write something for us" placeholder="Message"></textarea>
-        
-                        <div class="validate"></div>
-        
-                      </div>
-        
-                      <div class="mb-3">
-        
-                        <div class="loading">Loading</div>
-        
-                        <div class="error-message"></div>
-        
-                        <div class="sent-message">
-        
-                          Your message has been sent. Thank you!
-        
-                        </div>
-        
-                      </div>
-        
-                      <div class="text-center">
-        
-                        <button type="submit">Send Message</button>
-        
-                      </div>
-        
-                    </form>
-        
-                    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-        
-                    <script src="assets/js/firebase.js"></script>
-        
-                  </div>
-        
-                </div>
-        
-              </div>
-        
-            </section>
-        
-            <!-- End Contact Section -->
-        
-          </main>
-        
-          <!-- End #main -->
-        
-        
-        
-          <!-- ======= Footer ======= -->
-        
-          <footer id="footer">
-        
-            <div class="container">
-        
-              <div class="row d-flex align-items-center">
-        
-                <div class="col-lg-6 text-lg-left text-center">
-        
-                  <div class="copyright">
-        
-                    &copy; Copyright <strong>Virtually Testing Foundation</strong>.
-        
-                    All Rights Reserved
-        
-                  </div>
-        
-                </div>
-        
-                <div class="col-lg-6">
-        
-        
-                </div>
-        
-              </div>
-        
-            </div>
-        
-          </footer>
-        
-          <!-- End Footer -->
-        
-        
-        
-          <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-        
-        <script>
-        
-          $(".slider").owlCarousel({
-        
-            loop: true,
-        
-            autoplay:true,
-        
-            autoplayTimeout:7000,
-        
-            autoplayHoverPause: true,
-        
-          });
-        
-        </script>
-        
-          <!-- Vendor JS Files -->
-        
-          <script src="assets/vendor/jquery/jquery.min.js"></script>
-        
-          <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        
-          <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        
-          <script src="assets/vendor/php-email-form/validate.js"></script>
-        
-          <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-        
-          <script src="assets/vendor/counterup/counterup.min.js"></script>
-        
-          <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-        
-          <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        
-          <script src="assets/vendor/venobox/venobox.min.js"></script>
-        
-          <script src="assets/vendor/aos/aos.js"></script>
-        
-        
-        
-        
-        
-          <script src="assets/js/flickity.pkgd.min.js"></script>
-        
-          <!-- Template Main JS File -->
-        
-          <script>
-        
-            let Events = [];
-        
-            getapi();
-        
-            function preloadImage(url) {
-        
-              var img = new Image();
-        
-              img.src = url;
-        
-            }
-        
-            async function getapi() {
-        
-              await fetch(
-        
-                "https://virtuallytestingfoundation-default-rtdb.firebaseio.com/Events.json"
-        
-              )
-        
-                .then((res) => res.json())
-        
-                .then((data) => (Events = data));
-        
-              console.log(Events);
-        
-              //   document.getElementById("upcoming-events").innerHTML = "";
-        
-              for (let i = 0; i < Events.upcoming.length; i++) {
-        
-                preloadImage(Events.upcoming[i].img);
-        
-        
-        
-                $("#upcoming-events-main")
-        
-                  .owlCarousel(
-        
-                    "add",
-        
-                    '<div id="' +
-        
-                    Events.upcoming[i].index +
-        
-                    '" class="testimonial-wrap"><div class="testimonial-item p-0"><img src="' +
-        
-                    Events.upcoming[i].img +
-        
-                    '" class="w-100" style="border-radius: 7px 7px 0px 0px" /><div class="p-4"><h3 class="title"><a href="' +
-        
-                    Events.upcoming[i].link +
-        
-                    '">' +
-        
-                    Events.upcoming[i].title +
-        
-                    '</a></h3><p class="description">' +
-        
-                    Events.upcoming[i].description +
-        
-                    '</p><a href="' +
-        
-                    Events.upcoming[i].link +
-        
-                    '" class="btn-learn-more scrollto">Details</a></div></div></div>'
-        
-                  )
-        
-                  .owlCarousel("update");
-        
-              }
-        
-            }
-        
-          </script>
-        
-          <script src="assets/js/main.js"></script>
-        
-        </body>
-        
-        
-        
-        </html>
-        
-    </body>
+
+
+<!-- Read more ends -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script></script>
+  <script>
+    $(".readmore-btn").on('click',function(){
+      $(this).parent().toggleClass("showContent");
+      var replaceText = $(this).parent().hasClass("showContent") ?"Read less" : "Read more";
+      $(this).text(replaceText);
+    });
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
 </html>
+
+
+
+
+
+
